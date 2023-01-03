@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.app img {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  margin: 0.5rem;
+}
+
+.app li {
+  list-style: none;
+}

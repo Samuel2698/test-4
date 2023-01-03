@@ -1,0 +1,51 @@
+.gifs button {
+  background-color: red;
+  border: none;
+  border-radius: 8px;
+  height: 35px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 1rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.gifs input {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  height: 25px;
+}
+
+.gifs ul {
+  display: flex;
+}
+
+.gifs li {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.gifs .link {
+  color: #000;
+  text-decoration: none;
+}
+
+.gifs form {
+  margin-left: 1rem;
+}
+
+.gifs h2 {
+  margin-left: 1rem;
+}
+
+@media (680px >= width) {
+  .gifs ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
