@@ -5,12 +5,17 @@ body {
 }
 
 .app img {
+  width: 250px;
+  height: 250px;
+  transition-duration: 0.8s;
   cursor: pointer;
-  width: 300px;
-  height: 300px;
-  margin: 0.5rem;
+  padding: 1rem;
 }
 
-.app li {
-  list-style: none;
+.app img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }

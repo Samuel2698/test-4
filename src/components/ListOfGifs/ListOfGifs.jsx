@@ -3,8 +3,8 @@ import Gif from "../Gif/Gif";
 const ListOfGifs = ({ gifs }) => {
   return (
     <>
-      {gifs.map(({ id, url }) => (
-        <Gif id={id} url={url} key={id} />
+      {gifs.map(({ url, title, id }) => (
+        <Gif url={url} title={title} key={title} id={id} />
       ))}
     </>
   );

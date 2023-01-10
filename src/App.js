@@ -9,12 +9,12 @@ function App() {
   return (
     <div className="app">
       <Link to="/">
-        <img className="logo" src={Logo} alt="Logo de Gifs y un perro encima" />
+        <img src={Logo} alt="Logo de Gifs con perro encima" />
       </Link>
       <GifsContextProvider>
-        <Route component={Home} path="/" />
-        <Route component={SearchResults} path="/search/:keyword" />
-        <Route component={Detail} path="/gif/:id" />
+        <Route path="/" component={Home} />
+        <Route path="/search/:keyword" component={SearchResults} />
+        <Route path="/gif/:id" component={Detail} />
       </GifsContextProvider>
     </div>
   );

@@ -1,51 +1,31 @@
-.gifs button {
-  background-color: red;
-  border: none;
-  border-radius: 8px;
-  height: 35px;
-  cursor: pointer;
-  color: #fff;
-  margin-right: 1rem;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+.home h2 {
+  margin-left: 2.4rem;
 }
 
-.gifs input {
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  height: 25px;
-}
-
-.gifs ul {
+.home ul {
+  list-style: none;
   display: flex;
+  margin-bottom: 3rem;
 }
 
-.gifs li {
-  margin: 1rem;
+.home li {
+  margin-right: 2rem;
   font-size: 1.2rem;
 }
 
-.gifs .link {
+.home .link {
   color: #000;
   text-decoration: none;
 }
 
-.gifs form {
-  margin-left: 1rem;
-}
-
-.gifs h2 {
-  margin-left: 1rem;
-}
-
-@media (680px >= width) {
-  .gifs ul {
+@media (width <=650px) {
+  .home ul {
     display: flex;
     flex-direction: column;
+  }
+
+  .home li {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
   }
 }

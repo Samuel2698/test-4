@@ -1,12 +1,10 @@
 import { Link } from "wouter";
 
-const Gif = ({ id, url }) => {
+const Gif = ({ url, title, id }) => {
   return (
-    <>
-      <Link to={`/gif/${id}`}>
-        <img loading="lazy" src={url} alt={id} />
-      </Link>
-    </>
+    <Link to={`/gif/${id}`}>
+      <img loading="lazy" src={url} alt={title} />
+    </Link>
   );
 };
 

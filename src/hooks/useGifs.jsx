@@ -1,9 +1,9 @@
 import { useContext, useState, useEffect } from "react";
+import GifsContext from "../context/GifsContext";
 import getGifs from "../services/getGifs";
-import GifsProvider from "../context/GifsContext";
 
 const useGifs = ({ keyword } = { keyword: null }) => {
-  const { gifs, setGifs } = useContext(GifsProvider);
+  const { gifs, setGifs } = useContext(GifsContext);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const useGifs = ({ keyword } = { keyword: null }) => {
     });
   }, [keyword]);
 
-  return { loading, gifs };
+  return { gifs, loading };
 };
 
 export default useGifs;
