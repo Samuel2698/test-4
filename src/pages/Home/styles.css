@@ -1,5 +1,7 @@
 .home form {
   margin: 2rem 1rem;
+  display: grid;
+  place-items: center;
 }
 
 .home h2 {
@@ -9,7 +11,8 @@
 .home input {
   border: none;
   background-color: #ccc;
-  height: 2rem;
+  height: 2.5rem;
+  width: 20rem;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
@@ -18,35 +21,14 @@
   border: none;
   background-color: rgb(56, 56, 56);
   color: #fff;
-  height: 2rem;
+  height: 2.5rem;
+  width: 6rem;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
-.home ul {
-  list-style: none;
-  display: flex;
-  margin-bottom: 3rem;
-}
-
-.home li {
-  margin-right: 2rem;
-  font-size: 1.2rem;
-}
-
-.home .link {
-  color: #000;
-  text-decoration: none;
-}
-
-@media (width <=650px) {
-  .home ul {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home li {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
+@media (width <= 900px) {
+  .home form {
+    margin-right: 14rem;
   }
 }

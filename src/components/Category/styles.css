@@ -1,0 +1,35 @@
+.category h2 {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+
+.category ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.category li {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+.category .link {
+  color: #000;
+  text-decoration: none;
+}
+
+@media (width <=650px) {
+  .category ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category li {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+}

@@ -34,26 +34,22 @@ const Home = () => {
   return (
     <div className="home">
       <form onSubmit={handleSubmit}>
-        <input
-          onChange={handleChange}
-          type="text"
-          placeholder="Buscar Gif:"
-          value={keyword}
-        />
-        <button>Buscar:</button>
+        <div>
+          <input
+            onChange={handleChange}
+            type="text"
+            placeholder="Buscar Gif:"
+            value={keyword}
+          />
+          <button>Buscar:</button>
+        </div>
       </form>
+
+      <h2>Última búsqueda</h2>
       {loading ? <Spinner /> : <ListOfGifs gifs={gifs} />}
-      <Category name="Gifs de Mascotas" options={LATAM_GIFS} />
-      <h2>Gifs de Mascotas</h2>
-      <ul>
-        {PETS_GIFS.map((singleGif) => (
-          <li key={singleGif}>
-            <Link className="link" to={`/search/${singleGif}`}>
-              {singleGif}
-            </Link>
-          </li>
-        ))}
-      </ul>
+
+      <Category name="Gifs de Latam" options={LATAM_GIFS} />
+      <Category name="Gifs de Mascotas" options={PETS_GIFS} />
     </div>
   );
 };

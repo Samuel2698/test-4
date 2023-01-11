@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="app">
       <Link to="/">
-        <img src={Logo} alt="Logo de Gifs con perro encima" />
+        <img className="logo" src={Logo} alt="Logo de Gifs con perro encima" />
       </Link>
       <GifsContextProvider>
         <Route path="/" component={Home} />

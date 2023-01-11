@@ -8,6 +8,11 @@ button {
   cursor: pointer;
 }
 
+.app .logo {
+  width: 200px;
+  height: 200px;
+}
+
 .app img {
   width: 250px;
   height: 250px;
@@ -22,4 +27,58 @@ button {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
+}
+
+@media (width >= 600px) {
+  .app .logo {
+    margin-left: 5rem;
+  }
+}
+
+@media (width >= 800px) {
+  .app .logo {
+    margin-left: 10rem;
+  }
+}
+
+@media (width >= 900px) {
+  .app .logo {
+    margin-left: 15rem;
+  }
+}
+
+@media (width >= 950px) {
+  .app .logo {
+    margin-left: 20rem;
+  }
+}
+
+@media (width >= 1050px) {
+  .app .logo {
+    margin-left: 25rem;
+  }
+}
+
+@media (width >= 1150px) {
+  .app .logo {
+    margin-left: 28rem;
+  }
+}
+
+@media (width >= 1250px) {
+  .app .logo {
+    margin-left: 30rem;
+  }
+}
+
+@media (width >= 1350px) {
+  .app .logo {
+    margin-left: 32rem;
+  }
+}
+
+@media (width >= 1450px) {
+  .app .logo {
+    margin-left: 35rem;
+  }
 }
