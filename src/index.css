@@ -7,7 +7,7 @@ body {
 .app img {
   width: 250px;
   height: 250px;
-  transition-duration: 0.8s;
+  transition-duration: 0.5s;
   cursor: pointer;
   padding: 1rem;
 }
@@ -18,4 +18,8 @@ body {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
+}
+
+button {
+  cursor: pointer;
 }
