@@ -4,6 +4,7 @@ import { Link, useLocation } from "wouter";
 import useGifs from "../../hooks/useGifs";
 import Spinner from "../../components/Spinner/index";
 import ListOfGifs from "../../components/ListOfGifs/ListOfGifs";
+import Category from "../../components/Category/Category";
 
 const LATAM_GIFS = [
   "Argentina",
@@ -42,16 +43,7 @@ const Home = () => {
         <button>Buscar:</button>
       </form>
       {loading ? <Spinner /> : <ListOfGifs gifs={gifs} />}
-      <h2>Gifs de Latam</h2>
-      <ul>
-        {LATAM_GIFS.map((singleGif) => (
-          <li key={singleGif}>
-            <Link className="link" to={`/search/${singleGif}`}>
-              {singleGif}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <Category name="Gifs de Mascotas" options={LATAM_GIFS} />
       <h2>Gifs de Mascotas</h2>
       <ul>
         {PETS_GIFS.map((singleGif) => (

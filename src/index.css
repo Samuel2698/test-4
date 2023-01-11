@@ -4,6 +4,10 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 .app img {
   width: 250px;
   height: 250px;
@@ -18,8 +22,4 @@ body {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -o-transform: scale(1.2);
-}
-
-button {
-  cursor: pointer;
 }
