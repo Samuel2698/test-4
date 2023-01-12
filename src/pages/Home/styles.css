@@ -27,6 +27,27 @@
   border-bottom-right-radius: 8px;
 }
 
+@media (width<=700px) {
+  .home input {
+    border: none;
+    background-color: #ccc;
+    height: 2.5rem;
+    width: 9rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .home button {
+    border: none;
+    background-color: rgb(56, 56, 56);
+    color: #fff;
+    height: 2.5rem;
+    width: 4rem;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+
 @media (width <= 900px) {
   .home form {
     margin-right: 14rem;
